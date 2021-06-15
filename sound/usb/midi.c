@@ -1867,6 +1867,7 @@ static int snd_usbmidi_get_ms_info(struct snd_usb_midi *umidi,
 			continue;
 		if (ms_ep->bNumEmbMIDIJack > 0x10)
 			continue;
+
 		if (usb_endpoint_dir_out(ep)) {
 			if (endpoints[epidx].out_ep) {
 				if (++epidx >= MIDI_MAX_ENDPOINTS) {
