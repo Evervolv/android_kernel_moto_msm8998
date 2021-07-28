@@ -3491,7 +3491,6 @@ int usb_port_resume(struct usb_device *udev, pm_message_t msg)
 			k++;
 			goto U_retry;
 		}
-
 	}
 
  SuspendCleared:
